@@ -51,6 +51,20 @@ function suite(test) {
     })
   })
 
+  test('works with array-mode', function(assert) {
+    var one = setTimeoutStream(4, 100)
+      , two = setTimeoutStream(2, 100)
+      , now = Date.now()
+
+    one.pipe(createSink())
+    two.pipe(createSink())
+
+    endAll([one, two], function(err) {
+      assert.ok(!one.readable && !two.readable)
+      assert.end()
+    })
+  })
+
   test('works with one erroring stream', function(assert) {
     var one = setTimeoutStream(4, 100)
       , two = setTimeoutStream(2, 100)
