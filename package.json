@@ -1,0 +1,29 @@
+{
+  "name": "exuent",
+  "version": "0.0.0",
+  "description": "call a callback when all passed streams have ended or any stream has errored",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chrisdickinson/exuent.git"
+  },
+  "keywords": [
+    "streams",
+    "streams2",
+    "end",
+    "endall"
+  ],
+  "author": "Chris Dickinson <chris@neversaw.us> (http://neversaw.us/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chrisdickinson/exuent/issues"
+  },
+  "homepage": "https://github.com/chrisdickinson/exuent",
+  "devDependencies": {
+    "readable-stream": "^1.0.26-2",
+    "tape": "^2.10.2"
+  }
+}
