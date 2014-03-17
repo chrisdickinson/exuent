@@ -1,6 +1,6 @@
 {
   "name": "exuent",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "call a callback when all passed streams have ended or any stream has errored",
   "main": "index.js",
   "scripts": {
