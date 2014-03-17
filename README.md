@@ -24,7 +24,7 @@ exuent([stream1, streamN], function(err) {
 
 `ready` will be called on `nextTick` if no streams are provided.
 
-**Does not trigger flowing mode or reads.** Streams much be piped
+**Does not trigger flowing mode or reads.** Streams must be piped
 separately from this function.
 
 ## License
